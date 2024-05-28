@@ -86,6 +86,11 @@
         .section {
             margin: 20px 0;
         }
+        .visit-counter {
+            text-align: center;
+            margin-top: 20px;
+            color: #555;
+        }
     </style>
 </head>
 <body>
@@ -282,7 +287,36 @@
             Phone: +91-9113839830</p>
         </div>
     </div>
+
+    <div class="visit-counter">
+        <p>Website Visits: <span id="visitCount">0</span></p>
+    </div>
 </div>
+
+<script>
+    // Function to update the visit count
+    function updateVisitCount() {
+        // Retrieve the current visit count from localStorage
+        let visitCount = localStorage.getItem('visitCount');
+        
+        // If no visit count is found, initialize it to 0
+        if (!visitCount) {
+            visitCount = 0;
+        }
+
+        // Increment the visit count
+        visitCount++;
+
+        // Store the updated visit count back in localStorage
+        localStorage.setItem('visitCount', visitCount);
+
+        // Display the updated visit count on the web page
+        document.getElementById('visitCount').innerText = visitCount;
+    }
+
+    // Update the visit count when the page loads
+    document.addEventListener('DOMContentLoaded', updateVisitCount);
+</script>
 
 </body>
 </html>
