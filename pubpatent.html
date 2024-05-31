@@ -1,54 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>List of Papers Published in Journal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Patents</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h3 {
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table thead {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        table th, table td {
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        table tbody tr:nth-child(even) {
+            background-color: #f4f4f9;
+        }
+
+        table tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        th {
+            font-weight: bold;
+        }
+
+        td {
+            color: #555;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
-  <h3>List of Patents</h3>
-
-
-<table>
-    <thead>
-        <tr>
-            <th>Application Number</th>
-            <th>Authors</th>
-            <th>Title / Status / Organization</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Under Processing</td>
-            <td>Utsav Tiwari, Arun Chauhan, Vikram N R, Payal Anand, Hitesh Kumar</td>
-            <td>Quantization Aware Training / Under Processing / Samsung Research Bangalore</td>
-        </tr>
-        <tr>
-            <td>202341000351</td>
-            <td>Arun Chauhan, Vikram N R, Payal Anand, Rohit Saxena, Hitesh Kumar, Utsav Kumar</td>
-            <td>Mixed Precision Quantization Using First Order Methods Only / Filed 2023 / Samsung Research Bangalore</td>
-        </tr>
-        <tr>
-            <td>202241064217</td>
-            <td>Arun Chauhan, Vikram N R, Payal Anand, Rohit Saxena, Hitesh Kumar, Utsav Kumar</td>
-            <td>A System and Method to Train the Deep Neural Networks with Better Accuracy / Filed 2022 / Samsung Research Bangalore</td>
-        </tr>
-        <tr>
-            <td>202111060757</td>
-            <td>Ashwini K. Singh, Vijay Singh, Surender Singh Samant, Arun Chauhan, Dr. B Pant</td>
-            <td>Dooring Accident Prevention System / Publication Date (u/s 11a): 31/12/2021 / GEU Dehradun</td>
-        </tr>
-        <tr>
-            <td>202111060782</td>
-            <td>Vijay Singh, Ashwini K. Singh, Surender Samant, Arun Chauhan, Dr. B Pant</td>
-            <td>Digital Camouflage Uniform / Publication Date (u/s 11a): 31/12/2021 / GEU Dehradun</td>
-        </tr>
-        <tr>
-            <td>202111061021</td>
-            <td>Vijay Singh, Ashwini K. Singh, Surender Singh Samant, Arun Chauhan, Dr. B Pant</td>
-            <td>Content Masking System on Streaming / Publication Date (u/s 11a): 31/12/2021 / GEU Dehradun</td>
-        </tr>
-    </tbody>
-</table>
+    <div class="container">
+        <h3>List of Patents</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Application Number</th>
+                    <th>Authors</th>
+                    <th>Title / Status / Organization</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Under Processing</td>
+                    <td>Utsav Tiwari, Arun Chauhan, Vikram N R, Payal Anand, Hitesh Kumar</td>
+                    <td>Quantization Aware Training / Under Processing / Samsung Research Bangalore</td>
+                </tr>
+                <tr>
+                    <td>202341000351</td>
+                    <td>Arun Chauhan, Vikram N R, Payal Anand, Rohit Saxena, Hitesh Kumar, Utsav Kumar</td>
+                    <td>Mixed Precision Quantization Using First Order Methods Only / Filed 2023 / Samsung Research Bangalore</td>
+                </tr>
+                <tr>
+                    <td>202241064217</td>
+                    <td>Arun Chauhan, Vikram N R, Payal Anand, Rohit Saxena, Hitesh Kumar, Utsav Kumar</td>
+                    <td>A System and Method to Train the Deep Neural Networks with Better Accuracy / Filed 2022 / Samsung Research Bangalore</td>
+                </tr>
+                <tr>
+                    <td>202111060757</td>
+                    <td>Ashwini K. Singh, Vijay Singh, Surender Singh Samant, Arun Chauhan, Dr. B Pant</td>
+                    <td>Dooring Accident Prevention System / Publication Date (u/s 11a): 31/12/2021 / GEU Dehradun</td>
+                </tr>
+                <tr>
+                    <td>202111060782</td>
+                    <td>Vijay Singh, Ashwini K. Singh, Surender Samant, Arun Chauhan, Dr. B Pant</td>
+                    <td>Digital Camouflage Uniform / Publication Date (u/s 11a): 31/12/2021 / GEU Dehradun</td>
+                </tr>
+                <tr>
+                    <td>202111061021</td>
+                    <td>Vijay Singh, Ashwini K. Singh, Surender Singh Samant, Arun Chauhan, Dr. B Pant</td>
+                    <td>Content Masking System on Streaming / Publication Date (u/s 11a): 31/12/2021 / GEU Dehradun</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
+
 </html>
