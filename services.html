@@ -64,17 +64,19 @@
             margin-bottom: 30px;
         }
 
-        button {
+        a.button {
+            display: inline-block;
             background-color: #343a40;
             color: #ffffff;
             border: none;
             padding: 12px 24px;
             border-radius: 5px;
             font-size: 16px;
+            text-decoration: none;
             cursor: pointer;
         }
 
-        button:hover {
+        a.button:hover {
             background-color: #1d2124;
         }
 
@@ -123,7 +125,6 @@
             <ul>
                 <li><a href="#consultancy">Online Consultancy</a></li>
                 <li><a href="#tutorials">Online Tutorials</a></li>
-                
             </ul>
         </nav>
     </header>
@@ -131,62 +132,20 @@
     <section id="consultancy">
         <h2>Online Consultancy</h2>
         <p>We offer expert online consultancy services in various domains. Our experienced professionals are here to help you with your specific needs.</p>
-        <button onclick="showModal('consultancyModal')">Learn More</button>
+        <a href="mailto:info@consultancy.com" class="button">Email Us</a>
     </section>
 
     <section id="tutorials">
         <h2>Online Tutorials</h2>
         <p>Join our comprehensive online tutorials designed to train faculty and employees. Enhance your skills with our expert-guided sessions.</p>
-        <button onclick="showModal('tutorialsModal')">Learn More</button>
+        <a href="mailto:info@tutorials.com" class="button">Email Us</a>
     </section>
 
     <section id="coaching">
         <h2>Online Coaching for Students</h2>
         <p>Get personalized online coaching on demand. Our expert coaches are available to help students achieve their academic goals.</p>
-        <button onclick="showModal('coachingModal')">Learn More</button>
+        <a href="mailto:info@coaching.com" class="button">Email Us</a>
     </section>
-
-    <div id="consultancyModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('consultancyModal')">&times;</span>
-            <h2>Online Consultancy Details</h2>
-            <p>Our online consultancy services include:</p>
-            <ul>
-                <li>Business Strategy</li>
-                <li>IT Solutions</li>
-                <li>Project Management</li>
-                <li>And many more...</li>
-            </ul>
-        </div>
-    </div>
-
-    <div id="tutorialsModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('tutorialsModal')">&times;</span>
-            <h2>Online Tutorials Details</h2>
-            <p>Our online tutorials cover:</p>
-            <ul>
-                <li>Advanced Teaching Techniques</li>
-                <li>Employee Skill Development</li>
-                <li>Continuous Professional Development</li>
-                <li>And much more...</li>
-            </ul>
-        </div>
-    </div>
-
-    <div id="coachingModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('coachingModal')">&times;</span>
-            <h2>Online Coaching Details</h2>
-            <p>Our online coaching services provide:</p>
-            <ul>
-                <li>Personalized Study Plans</li>
-                <li>One-on-One Sessions</li>
-                <li>Exam Preparation</li>
-                <li>And much more...</li>
-            </ul>
-        </div>
-    </div>
 
     <script src="scripts.js"></script>
 </body>
